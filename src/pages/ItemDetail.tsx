@@ -14,7 +14,6 @@ type Alert = Database['public']['Tables']['alert_log']['Row']
 
 export default function ItemDetail() {
   const { id } = useParams<{ id: string }>()
-  const { isAdmin } = useAuth()
   const [item, setItem] = useState<Item | null>(null)
   const [movements, setMovements] = useState<Movement[]>([])
   const [alerts, setAlerts] = useState<Alert[]>([])

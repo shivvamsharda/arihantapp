@@ -19,7 +19,7 @@ import ItemCard from '@/components/mobile/ItemCard'
 type Item = Database['public']['Tables']['items']['Row']
 
 export default function Items() {
-  const { isAdmin, isStaff, isViewer } = useAuth()
+  const { isAdmin, isStaff } = useAuth()
   const canRecordMovements = isAdmin || isStaff
   const [items, setItems] = useState<Item[]>([])
   const [loading, setLoading] = useState(true)
