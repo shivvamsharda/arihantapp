@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { supabase } from '@/lib/supabase'
-import { useAuth } from '@/contexts/AuthContext'
 import { format } from 'date-fns'
 import { ArrowLeft, Package, AlertTriangle } from 'lucide-react'
 import type { Database } from '@/lib/database.types'
