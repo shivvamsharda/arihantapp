@@ -413,7 +413,6 @@ export default function Items() {
             </div>
           </div>
         )}
-      </div>
 
       {/* Modals */}
       {isItemModalOpen && (
